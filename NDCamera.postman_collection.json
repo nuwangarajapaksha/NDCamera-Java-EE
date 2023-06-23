@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "44362381-dad8-40a0-bedc-5e97735a6118",
+		"name": "NDCamera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24356335"
+	},
+	"item": [
+		{
+			"name": "Search Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NDCameraEnterpriseApplication-war/SearchProduct?value=Nikon 750",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NDCameraEnterpriseApplication-war",
+						"SearchProduct"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "Nikon 750"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NDCameraEnterpriseApplication-war/InsertProduct?productName=Nikon 5300&brand=Nikon&type=DSLR&sensorType=DX",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NDCameraEnterpriseApplication-war",
+						"InsertProduct"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "Nikon 5300"
+						},
+						{
+							"key": "brand",
+							"value": "Nikon"
+						},
+						{
+							"key": "type",
+							"value": "DSLR"
+						},
+						{
+							"key": "sensorType",
+							"value": "DX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NDCameraEnterpriseApplication-war/UpdateProduct?productName=Canon 200&brand=Canon&type=DSLR&sensorType=DX&id=36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NDCameraEnterpriseApplication-war",
+						"UpdateProduct"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "Canon 200"
+						},
+						{
+							"key": "brand",
+							"value": "Canon"
+						},
+						{
+							"key": "type",
+							"value": "DSLR"
+						},
+						{
+							"key": "sensorType",
+							"value": "DX"
+						},
+						{
+							"key": "id",
+							"value": "36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NDCameraEnterpriseApplication-war/DeleteProduct?id=36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NDCameraEnterpriseApplication-war",
+						"DeleteProduct"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NDCameraEnterpriseApplication-war/j_security_check?j_username=superadmin&j_password=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NDCameraEnterpriseApplication-war",
+						"j_security_check"
+					],
+					"query": [
+						{
+							"key": "j_username",
+							"value": "superadmin"
+						},
+						{
+							"key": "j_password",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NDCameraEnterpriseApplication-war/Logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NDCameraEnterpriseApplication-war",
+						"Logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
